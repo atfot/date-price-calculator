@@ -28,7 +28,7 @@ thead.appendChild(row_1);
 // Creating and adding data to second row of the table
 let row_2 = document.createElement('tr');
 let row_2_data_1 = document.createElement('td');
-row_2_data_1.innerHTML = "조현규";
+row_2_data_1.innerHTML = "개";
 let row_2_data_2 = document.createElement('td');
 row_2_data_2.innerHTML = "A";
 let row_2_data_3 = document.createElement('td');
@@ -47,7 +47,7 @@ tbody.appendChild(row_2);
 // Creating and adding data to third row of the table
 let row_3 = document.createElement('tr');
 let row_3_data_1 = document.createElement('td');
-row_3_data_1.innerHTML = "김하영";
+row_3_data_1.innerHTML = "고양이";
 let row_3_data_2 = document.createElement('td');
 row_3_data_2.innerHTML = "B";
 let row_3_data_3 = document.createElement('td');
