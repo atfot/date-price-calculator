@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>반복문</h1>
+    <ul>
+    <script>
+      document.write('<li>1</li>');
+      var i = 0;
+      while(i < 3){
+      document.write('<li>2</li>');
+      document.write('<li>3</li>');
+      i = i +1;
+      }
+      document.write('<li>4</li>');
+    </script>
+    <h2>배열과 반복문<h2>
+    <h3>바다친구들</h3>
+    <script>
+      var seaanimals = ['김포뇨', '조거북', '아기낙지', '열대어','진주조개', '고래아저씨'];
+    </script>
+    <ul>
+      <script>
+        var i = 0
+        while(i<seaanimals.length){
+        document.write('<li>'+seaanimals[i]+'</li>');
+        i = i + 1;
+      }
+      </script>
+    </ul>
+    <h4>function</h4>
+    <ul>
+      <script>
+         function something(){document.write(1+3+'<br>');}
+         something();
+      </script>
+    </ul>
+    <h1>return</h1>
+    <script>
+       function pt(left, right){return left+right+'<br>';}
+       document.write(pt(2,3)+'<br>');
+       document.write('<div style="color:blue">'+pt(2,3)+'</div>');
+       document.write('<div style="font-size:3rem;">'+pt(2,3)+'</div>');
+    </script>
+    <h1>귀여운 아기동물들</h1>
+    <script>
+      var babyanimals = {
+        "공주" : "김포뇨",
+        "왕자" : "조거북",
+        "걔네들 칭구" : "아기고양이"
+      };
+      document.write("귀요미 : "+babyanimals.공주+"<br>");
+      document.write("귀요미의 베프 : "+babyanimals.왕자+"<br>");
+      babyanimals.애기 = "열대어";
+      document.write("귀요미의 칭구 : "+babyanimals.애기+"<br>");
+      babyanimals["아가 녀석"] = "아기브라키오";
+      document.write("귀요미를 좋아하는 애 : "+babyanimals["아가 녀석"]+"<br>");
+    </script>
+    <h1>Iteration</h1>
+    <script>
+      for(var key in babyanimals){document.write(key+' : '+babyanimals[key]+'<br>')};
+    </script>
+    <h1>Property & Method</h1>
+    <script>
+      babyanimals.showAll = function(){
+        for(var key in this){document.write(key+' : '+this[key]+'<br>')}
+      }
+      babyanimals.showAll();
+    </script>
+  </body>
+</html>

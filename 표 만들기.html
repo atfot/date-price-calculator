@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>도전!</title>
+    <link rel="stylesheet" href="calstyle.css">
+
+</head>
+  <body>
+      <table border = "1px">
+          <tr>
+              <th>이름</th>
+              <th>총 지출액</th>
+              <th>상호 부담액</th>
+              <th>상호 부채</th>
+          </tr>
+          <tr>
+              <td>조현규</td>
+              <td id = "A";>
+                <input type="text" name="price">
+              </td>
+              <td id = "haplb";>
+                <input type="text" name="HAPB">
+              </td>
+              <td id = "debtA";>
+                <input type="text" name="debtA">
+            </td>
+        </tr>
+          <tr>
+            <td>김하영</td>
+            <td id = "B";>
+                <input type="text" name="price">
+            </td>
+            <td id = "haplb";>
+              <input type="text" name="HAPB">
+            </td>
+            <td id = "debtB";>
+              <input type="text" name="debtB">
+          </td>
+        </tr>
+      </table>
+      <button id="button">"계ㅡㅡㅡㅡ산!!!!!!!"</button>
+      <script language='javascript'>
+          const sumA = document.getElementById('A').value;
+          const sumB = document.getElementById('B').value;
+          const result = document.getElementById('button');
+
+          function dutch_pay(){
+              document.write[(sumA.value+sumB.value)/2];
+              document.getElementsByName('HAPB').value = dutch_pay;
+
+          };
+
+
+      </script>
+
+  </body>
+</html>

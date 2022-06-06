@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <title>사랑의 계산기</title>
+     <meta charset="utf-8">
+  </head>
+    <body>
+      
+      <h1>데이트비 계산기</h1>
+       <li>각자의 총 지출액을 각자의 은행 어플에서 꺼내 더해주세요</li>
+       <li>첫 지출 시작 시간과 지출 종료 시간을 정확히 계산해주세요</li>
+       <li>상호 부채칸에 써져있는 가격을 상대에게 지불하세요</li>
+    <p id="body">
+      <script type="text/javascript">
+
+        function tableCreate(){
+          const body = document.body;
+          tbl = document.createElement('table');
+          tbl.style.width = '100%';
+          tbl.style.border = '2px solid black';
+
+          const tdname = ['이름', '총 지출액', '상호 부담액', '상호 부채'];
+          const trname = ['이름', '조현규', '김하영'];
+
+          for(let i = 0; i<tdname.length; i++){
+          const tr = tbl.insertRow(tdname[i]);
+          for(let j = 0; j<trname.length; j++){
+          if(i === 3 && j === 2){break;}
+
+          else{
+            const td = tr.insertCell();
+            td.appendChild(document.write(tdname[i]));
+            td.appendChild(document.write(trname[j]));
+            td.style.border = '1px solid black';
+            if(i === 0 && j === 0){td.document.write('이름');
+          }
+          }
+        }
+      }
+      body.appendChild(tbl);
+    }
+    tableCreate();
+      </script>
+    </p>
+    </body>
+</html>

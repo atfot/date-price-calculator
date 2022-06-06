@@ -1,0 +1,11 @@
+body {margin:0;}
+h1 {background-color:powderblue;font-size:100px;text-align:center;border-bottom:1px solid gray;margin:0;padding:20px;}
+a {text-decoration: none;}
+h2, p{text-align: center;}
+ol{font-size:20px;border-right: 1px solid gray;width:425px;margin:0;padding:20px;}
+#grid{display:grid;grid-template-columns: 486px 1fr;}
+#grid ol{padding-left:40px;}
+#grid #article{padding-top:50px;}
+#headline {color:white;}
+#white {border:1px outset silver;}
+@media(max-width:1003px){#grid{display:block;}ol{border-right:none;}h1{border-bottom:none;}body{padding:10px;}}
