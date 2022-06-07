@@ -4,7 +4,26 @@
     <meta charset="utf-8">
     <title>도전!</title>
     <link rel="stylesheet" href="calstyle.css">
+    <script language='javascript'>
+        const sumA = document.getElementById('A').value;
+        const sumB = document.getElementById('B').value;
 
+        function Sum(){document.write(sumA + sumB)};
+        function halfSum(){Sum/2};
+
+        function debt_A(sumA, sumB){
+          if(sumA < sumB){(result_2 - sumB)/p};
+        } else {none};
+
+        function debt_B(sumA, sumB){
+          if(sumA > sumB){(result_2 - sumA)/p};
+        } else {none};
+
+        const dA = document.getElementById('debtA').value;
+                 = debt_A;
+        const dB = document.getElementById('debtB').value;
+                 = debt_B;
+    </script>
 </head>
   <body>
       <table border = "1px">
@@ -15,7 +34,7 @@
               <th>상호 부채</th>
           </tr>
           <tr>
-              <td>조현규</td>
+              <td>사람A</td>
               <td id = "A";>
                 <input type="text" name="price">
               </td>
@@ -27,7 +46,7 @@
             </td>
         </tr>
           <tr>
-            <td>김하영</td>
+            <td>사람B</td>
             <td id = "B";>
                 <input type="text" name="price">
             </td>
@@ -39,20 +58,5 @@
           </td>
         </tr>
       </table>
-      <button id="button">"계ㅡㅡㅡㅡ산!!!!!!!"</button>
-      <script language='javascript'>
-          const sumA = document.getElementById('A').value;
-          const sumB = document.getElementById('B').value;
-          const result = document.getElementById('button');
-
-          function dutch_pay(){
-              document.write[(sumA.value+sumB.value)/2];
-              document.getElementsByName('HAPB').value = dutch_pay;
-
-          };
-
-
-      </script>
-
   </body>
 </html>
